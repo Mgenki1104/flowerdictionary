@@ -14,6 +14,7 @@ header {
   margin: 30px auto 0;
   text-align: center;
   border-top: solid 5px #000000;
+  background-color: #FDF5E6; /* 背景色を半透明の黒にする */
 }
 
 header .headline {
@@ -47,14 +48,17 @@ main {
 .list-wrap {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .list-box {
   width: 200px;
-  height: 250px;
+  height: 200px;
   margin: 10px;
+  
 }
 
 .list-comment {
   width: 200px;
 }
+

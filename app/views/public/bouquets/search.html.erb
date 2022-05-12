@@ -24,13 +24,14 @@
 <h1>検索結果</h1>
 <table>
   
-
+<div class="search">
   <% @results.each do |bouquet| %>
     <%= link_to public_bouquet_path(bouquet) do %>
     <%= attachment_image_tag bouquet, :image, :fill, 100, 100 %>
     <p><%= bouquet.name %></p>
     <% end %>
   <% end %>
+</div>
   
   
     <%# @results.each do |bouquet| %>

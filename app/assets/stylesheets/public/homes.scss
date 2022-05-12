@@ -3,40 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-header {
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.header-text {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-cotent: center;
-  text-align: center;
-  font-family: fertigo-script, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-}
-
-header video {
-  // object-fit: cover:
-  object-position: center top;
-  opacity: var(--video-opacity);
-}
-
-.header-text,
-header video{
-  width: 100vw;
-  height: 90vh;
-}
-
 
 body {
   position: relative;
 }
-.text {
+
+.body-text {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -44,13 +21,39 @@ body {
   text-align: center;
   font-family: fertigo-script, sans-serif;
   font-weight: 400;
+  font-size: 25px;
   font-style: normal;
   color: white;
 }
 
+.body-content {
+  width: 30%; /* 横幅40% */
+  height: 300px; /* 親の高さに揃える */
+  background-color: rgba( 0, 0, 0, 0.5); /* 背景色を半透明の黒にする */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-cotent: center;
+  text-align: center;
+  font-family: fertigo-script, sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  font-style: normal;
+  color: white;
+  bottom: 0;
+}
 
-.text,
-header video{
+
+body video {
+  margin: 0;
+  padding: 0;
+  object-position: center top;
+  opacity: var(--video-opacity);
+  object-fit: cover;
+}
+
+.body-text,
+body video{
   width: 100vw;
-  height: 90vh;
+  height: 120vh;
 }

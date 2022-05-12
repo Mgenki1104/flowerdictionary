@@ -10,22 +10,25 @@
   <link rel="stylesheet" href="https://use.typekit.net/rzs2suz.css">
 </head>
 
-<header>
-  <div class="header-text">
-    <h1 class="header-name">
-      flower dictionary 
+<body>
+  <div class="body-text">
+    <h1 class="body-name">
+      flower dictionary
     </h1>
     <!--<h1 class="header-sentence"><%#= link_to "ENTER", public_bouquets_path %></h1>-->
   </div>
+  <div class="body-content">
+    <p class="body-sentence">
+      <p>For everyone who loves flowers</p>
+      <p>For thoes who want to know the meaning of flowers</p>
+      <p>a website for those of you</p>
+    </p>
+  </div>
+    <%= link_to public_bouquets_path do %>
     <%= video_tag("/assets/videos/mixkit-view-to-the-sideboard-of-a-flower-shop-4742.mp4", autoplay: :true, loop: :true, muted: :true, class: 'video-content') %>
     <%#= video_tag("/assets/videos/Sunflower field.mp4", autoplay: :true, loop: :true, muted: :true, class: 'video-content') %>
     <!--<video src="/flower_dictionary/public/assets/videos/Sunflower field.mp4" autoplay loop muted></video>-->
-
-</header>
-
-<body>
-<div class="text">
-<h1><%= link_to "ENTER", public_bouquets_path %></h1>
-</div>
+    <% end %>
 </body>
+
 </html>
