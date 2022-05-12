@@ -1,0 +1,18 @@
+
+<h1>画像投稿フォーム</h1>
+<%#= form_with model: @bouquet, local:true do |f| %>
+<%= form_with model: @bouquet, url: admin_bouquets_path, local:true do |f| %>
+  <h4>画像</h4>
+  <%= f.attachment_field :image %>
+  <%= f.collection_select(:flowering_season_id, @flowering_seasons, :id, :season) %>
+  <h4>花名</h4>
+  <%= f.text_field :name %>
+  <h4>花言葉</h4>
+  <%= f.text_field :flower_language %>
+  <h4>説明</h4>
+  <%= f.text_area :introduction %>
+  <h4>誕生花</h4>
+  <%= f.text_field :birth %>
+  
+  <%= f.submit '植える' %>
+<% end %>

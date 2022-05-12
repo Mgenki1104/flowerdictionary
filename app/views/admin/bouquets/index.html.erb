@@ -1,0 +1,19 @@
+<h1>flower dictionary
+
+</h1>
+<div class="list-wrap">
+ <% @bouquets.each do |bouquet| %>
+<%#= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+ <div class="list-box">
+  <%= attachment_image_tag bouquet, :image, :fill, 100, 100 %>
+  <div class="list-comment">
+   <p>開花時期：<%= bouquet.flowering_season.season %>
+   <p><%= bouquet.name %></p>
+   <p><%= bouquet.flower_language %></p>
+   <p><%= bouquet.introduction %></p>
+   <p><%= bouquet.birth %>
+  <%= link_to "編集する", edit_admin_bouquet_path(bouquet) %>
+  </div>
+
+<% end %>
+</div>

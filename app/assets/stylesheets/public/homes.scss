@@ -1,0 +1,56 @@
+// Place all the styles related to the public/homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+header {
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-cotent: center;
+  text-align: center;
+  font-family: fertigo-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+header video {
+  // object-fit: cover:
+  object-position: center top;
+  opacity: var(--video-opacity);
+}
+
+.header-text,
+header video{
+  width: 100vw;
+  height: 90vh;
+}
+
+
+body {
+  position: relative;
+}
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-cotent: center;
+  text-align: center;
+  font-family: fertigo-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+
+.text,
+header video{
+  width: 100vw;
+  height: 90vh;
+}

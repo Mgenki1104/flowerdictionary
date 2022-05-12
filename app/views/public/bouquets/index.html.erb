@@ -1,0 +1,47 @@
+
+<head>
+  
+  <link rel="stylesheet" href="https://use.typekit.net/rzs2suz.css">
+</head>
+
+<header>
+      <h1 class="headline"> FlowerDictionary</h1>
+</header>
+
+
+  <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <%= link_to "Dictionary", public_bouquets_path %>
+        </li>
+        <li class="nav-list-item">
+          <%= search_form_for @q, url: search_public_bouquets_path do |f| %>
+          <%= f.label :name_cont, '花名' %>
+          <%= f.search_field :name_cont %>
+          <%= f.submit '検索' %>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+    
+
+
+<main>
+<div class="list-wrap">
+ <% @bouquets.each do |bouquet| %>
+<%#= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+ <div class="list-box">
+  <%= link_to public_bouquet_path(bouquet) do %>
+  <%= attachment_image_tag bouquet, :image, :fill, 100, 100 %>
+  <% end %>
+  <div class="list-comment">
+   <p><%#= bouquet.flowering_season.season %>
+   <span class="list-title"><%= bouquet.name %></span>
+   <p><%#= bouquet.flower_language %></p>
+   <p><%#= bouquet.introduction %></p>
+   <p><%#= bouquet.birth %>
+  </div>
+ </div>
+<% end %>
+</div>
+</main>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flowering_season_id: 1
+  name: MyString
+  image_id: MyString
+  introduction: MyText
+  flower_language: MyString
+  birth: 1
+
+two:
+  flowering_season_id: 1
+  name: MyString
+  image_id: MyString
+  introduction: MyText
+  flower_language: MyString
+  birth: 1

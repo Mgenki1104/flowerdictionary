@@ -1,0 +1,22 @@
+// Place all the styles related to the admin/bouquets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-box {
+  width: 100px;
+  height: 200px;
+  margin: 5px;
+}
+
+.list-comment {
+  font-family: source-han-sans-japanese, sans-serif;
+
+  font-weight: 300;
+
+font-style: normal;
+  width: 100px;
+}

@@ -1,0 +1,47 @@
+<head>
+  
+  <link rel="stylesheet" href="https://use.typekit.net/rzs2suz.css">
+</head>
+
+<header>
+      <h1 class="headline"> FlowerDictionary</h1>
+</header>
+
+
+  <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <%= link_to "Dictionary", public_bouquets_path %>
+        </li>
+      
+      </ul>
+    </nav>
+    
+
+
+
+
+<h1>検索結果</h1>
+<table>
+  
+
+  <% @results.each do |bouquet| %>
+    <%= link_to public_bouquet_path(bouquet) do %>
+    <%= attachment_image_tag bouquet, :image, :fill, 100, 100 %>
+    <p><%= bouquet.name %></p>
+    <% end %>
+  <% end %>
+  
+  
+    <%# @results.each do |bouquet| %>
+      <!--<tr>-->
+      <!--  <td><%#= bouquet.name %></td>-->
+        <td><%#= user.age %></td>
+        <td><%#= user.height %></td>
+        <td><%#= user.weight %></td>
+        <td><%#= user.gender %></td>
+       
+      <!--</tr>-->
+    <%# end %>
+
+<%= link_to 'Top', public_bouquets_path %>

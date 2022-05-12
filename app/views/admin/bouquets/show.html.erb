@@ -1,0 +1,9 @@
+<h1>Admin::Bouquets#show</h1>
+<p>Find me in app/views/admin/bouquets/show.html.erb</p>
+<div><%= attachment_image_tag @bouquet, :image, :fill, 100, 100 %></div>
+  <p>開花時期：<%= @bouquet.flowering_season.season %>
+  <p><%= @bouquet.name %></p>
+  <p><%= @bouquet.flower_language %></p>
+  <p><%= @bouquet.introduction %></p>
+  <p><%= @bouquet.birth %>
+  <%= link_to "編集する", edit_admin_bouquet_path(@bouquet) %>

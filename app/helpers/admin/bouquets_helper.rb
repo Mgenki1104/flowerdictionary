@@ -1,0 +1,2 @@
+module Admin::BouquetsHelper
+end
