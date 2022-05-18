@@ -32,12 +32,18 @@ nav {
   text-align: center;
   padding: 10px 0;
   margin: 0 auto;
+  font-family: kinuta-reiwa-kana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
 }
 
 .nav-list-item {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
+  
 }
 
 main {
@@ -48,17 +54,24 @@ main {
 .list-wrap {
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 
 .list-box {
   width: 200px;
-  height: 200px;
+  height: 210px;
   margin: 10px;
-  
+}
+
+.bouquetimg {
+  object-fit: cover;
+  border-radius: 40% 70% 50% 30%/50%;
 }
 
 .list-comment {
-  width: 200px;
+  width: 150px;
+  font-family: kinuta-reiwa-kana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 

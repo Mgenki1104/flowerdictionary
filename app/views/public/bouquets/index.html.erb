@@ -2,6 +2,7 @@
 <head>
   
   <link rel="stylesheet" href="https://use.typekit.net/rzs2suz.css">
+  
 </head>
 
 <header>
@@ -32,7 +33,7 @@
 <%#= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
  <div class="list-box">
   <%= link_to public_bouquet_path(bouquet) do %>
-  <%= attachment_image_tag bouquet, :image, :fill, 200, 200 %>
+  <%= attachment_image_tag bouquet, :image, :fill, 200, 200, class: "bouquetimg" %>
   <% end %>
   <div class="list-comment">
    <p><%#= bouquet.flowering_season.season %>
